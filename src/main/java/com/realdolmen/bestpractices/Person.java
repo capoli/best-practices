@@ -17,4 +17,8 @@ public class Person implements MyPrintJob {
         printer.addQueue(this);
         return printer.startPrinting();
     }
+
+    public void print(Document document) {
+        document.startPrinting();
+    }
 }
