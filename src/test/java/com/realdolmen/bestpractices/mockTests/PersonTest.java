@@ -20,14 +20,14 @@ public class PersonTest extends Assert {
     //private Printer printerMock = Mockito.mock(Printer.class); of @Mock
     @Mock
     private Printer printerMock;
-    @Inject
+    //@Inject
     private Person person;
 
     @Before
     public void before() {
         person = new Person("jo", "boer");
     }
-
+//    Mockito.when(printerMock.startPrinting()).thenThrow(new IllegalStateException);
     @Test
     public void testPersonCanBePrinted() {
         Mockito.when(printerMock.startPrinting()).thenReturn(true);

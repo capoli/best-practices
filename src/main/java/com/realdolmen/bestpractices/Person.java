@@ -12,6 +12,7 @@ public class Person implements MyPrintJob {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+
     public boolean print(Printer printer) {
         printer.addQueue(this);
         return printer.startPrinting();

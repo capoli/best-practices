@@ -9,6 +9,7 @@ import java.util.Queue;
  */
 public class Printer {
     private Queue<MyPrintJob> jobs = new LinkedList<MyPrintJob>();
+
     public void addQueue(MyPrintJob job) {
         jobs.add(job);
     }
