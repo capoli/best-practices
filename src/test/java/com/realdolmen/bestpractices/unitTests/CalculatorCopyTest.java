@@ -1,5 +1,6 @@
-package com.realdolmen.bestpractices;
+package com.realdolmen.bestpractices.unitTests;
 
+import com.realdolmen.bestpractices.Calculator;
 import org.junit.*;
 
 
@@ -10,7 +11,7 @@ public class CalculatorCopyTest extends Assert {
     @Test
     @Ignore
     public void testAddInts() {
-        assertEquals(10, Calculator.add(5, 5) );
+        Assert.assertEquals(10, Calculator.add(5, 5));
         assertEquals(8, Calculator.add(4, 4) );
         assertEquals(6, Calculator.add(3, 3) );
     }
