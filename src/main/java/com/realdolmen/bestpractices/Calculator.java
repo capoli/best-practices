@@ -13,6 +13,7 @@ public class Calculator {
     }
 
     public static int divide(int x, int y) {
-        return x / y;
+        if(y == 0) throw new ArithmeticException("Can't divide by zero");
+        return (int) Math.round(((double) x / y));
     }
 }
