@@ -16,4 +16,8 @@ public class Calculator {
         if(y == 0) throw new ArithmeticException("Can't divide by zero");
         return (int) Math.round(((double) x / y));
     }
+
+    public static double root(double x) {
+        return Math.sqrt(x);
+    }
 }
