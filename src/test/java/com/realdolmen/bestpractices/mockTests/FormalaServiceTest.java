@@ -6,6 +6,7 @@ import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
@@ -19,8 +20,8 @@ import javax.ejb.EJB;
 public class FormalaServiceTest extends Assert {
     @Mock
     private Calculator calculator;
-    @EJB
-    private FormulaService formulaService;
+    @InjectMocks
+    private FormulaService formulaService = new FormulaService();
 
     @Test
     @Ignore
